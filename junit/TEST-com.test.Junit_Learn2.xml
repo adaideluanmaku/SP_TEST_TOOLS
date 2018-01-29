@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" hostname="chenhui" name="com.test.Junit_Learn2" skipped="0" tests="2" time="4.488" timestamp="2017-11-30T13:14:03">
+  <properties>
+    <property name="java.vendor" value="Oracle Corporation" />
+    <property name="sun.java.launcher" value="SUN_STANDARD" />
+    <property name="eclipse.pdebuild.templates" value="/C:/eclipse-jee-mars-R-win32-x86_64_base/eclipse/plugins/org.eclipse.pde.build_3.9.100.v20150521-1524/templates/" />
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers" />
+    <property name="env.CURR_DIR" value="C:\Program Files (x86)\HP\LoadRunner\dat\Setup\LoadRunner\MSBuild\..\..\..\.." />
+    <property name="env.PROMPT" value="$P$G" />
+    <property name="os.name" value="Windows 7" />
+    <property name="env.FP_NO_HOST_CHECK" value="NO" />
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_91\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_91\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_91\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_91\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_91\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_91\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_91\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_91\jre\classes" />
+    <property name="env.COMPUTERNAME" value="CHENHUI" />
+    <property name="env.CommonProgramW6432" value="C:\Program Files\Common Files" />
+    <property name="env.ALLUSERSPROFILE" value="C:\ProgramData" />
+    <property name="sun.desktop" value="windows" />
+    <property name="java.vm.specification.vendor" value="Oracle Corporation" />
+    <property name="ant.home" value="C:\eclipse-jee-mars-R-win32-x86_64_base\eclipse\plugins\org.apache.ant_1.9.4.v201504302020" />
+    <property name="java.runtime.version" value="1.8.0_91-b15" />
+    <property name="env.HOMEPATH" value="\Users\陈辉" />
+    <property name="user.name" value="陈辉" />
+    <property name="user.language" value="zh" />
+    <property name="env.windows_tracing_flags" value="3" />
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_91\jre\bin" />
+    <property name="env.LR_PATH" value="C:\Program Files (x86)\HP\LoadRunner\" />
+    <property name="ant.project.default-target" value="build" />
+    <property name="ant.project.name" value="SP_TEST_TOOLS" />
+    <property name="java.version" value="1.8.0_91" />
+    <property name="env.PROCESSOR_IDENTIFIER" value="AMD64 Family 16 Model 6 Stepping 3, AuthenticAMD" />
+    <property name="user.timezone" value="" />
+    <property name="env.asl.log" value="Destination=file" />
+    <property name="env.TEMP" value="C:\Users\陈辉\AppData\Local\Temp" />
+    <property name="sun.arch.data.model" value="64" />
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_91\jre\lib\endorsed" />
+    <property name="sun.cpu.isalist" value="amd64" />
+    <property name="env.HOMEDRIVE" value="C:" />
+    <property name="sun.jnu.encoding" value="GBK" />
+    <property name="file.encoding.pkg" value="sun.io" />
+    <property name="ECLIPSE_HOME" value="C:/eclipse-jee-mars-R-win32-x86_64_base/eclipse/" />
+    <property name="file.separator" value="\" />
+    <property name="java.specification.name" value="Java Platform API Specification" />
+    <property name="java.class.version" value="52.0" />
+    <property name="ant.file.SP_TEST_TOOLS" value="E:\workplaceNew2\SP_TEST_TOOLS\build.xml" />
+    <property name="user.country" value="CN" />
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_91\jre" />
+    <property name="env.PSModulePath" value="C:\windows\system32\WindowsPowerShell\v1.0\Modules\" />
+    <property name="env.APPDATA" value="C:\Users\陈辉\AppData\Roaming" />
+    <property name="env.PUBLIC" value="C:\Users\Public" />
+    <property name="env.windows_tracing_logfile" value="C:\BVTBin\Tests\installpackage\csilogfile.log" />
+    <property name="java.vm.info" value="mixed mode" />
+    <property name="env.ComSpec" value="C:\windows\system32\cmd.exe" />
+    <property name="env.OS" value="Windows_NT" />
+    <property name="env.CommonProgramFiles" value="C:\Program Files\Common Files" />
+    <property name="ant.file" value="E:\workplaceNew2\SP_TEST_TOOLS\build.xml" />
+    <property name="os.version" value="6.1" />
+    <property name="env.ProgramW6432" value="C:\Program Files" />
+    <property name="env.EXTRACTPATH" value="C:\Program Files (x86)\HP\LoadRunner\dat\Setup\LoadRunner\MSBuild\..\..\..\.." />
+    <property name="path.separator" value=";" />
+    <property name="java.vm.version" value="25.91-b15" />
+    <property name="env.VUGEN_PATH" value="C:\Program Files (x86)\HP\LoadRunner\" />
+    <property name="env.USERPROFILE" value="C:\Users\陈辉" />
+    <property name="user.variant" value="" />
+    <property name="ant.library.dir" value="C:\eclipse-jee-mars-R-win32-x86_64_base\eclipse\plugins\org.apache.ant_1.9.4.v201504302020\lib" />
+    <property name="junit.output.dir" value="junit" />
+    <property name="env.JAVA_HOME" value="C:\Program Files\Java\jdk1.8.0_91" />
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob" />
+    <property name="env.TERM" value="dumb" />
+    <property name="env.TMP" value="C:\Users\陈辉\AppData\Local\Temp" />
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle" />
+    <property name="env.LG_PATH" value="C:\Program Files (x86)\HP\LoadRunner\" />
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit" />
+    <property name="user.script" value="" />
+    <property name="eclipse.pdebuild.scripts" value="/C:/eclipse-jee-mars-R-win32-x86_64_base/eclipse/plugins/org.eclipse.pde.build_3.9.100.v20150521-1524/scripts/" />
+    <property name="ant.file.type.SP_TEST_TOOLS" value="file" />
+    <property name="user.home" value="C:\Users\陈辉" />
+    <property name="env.FTP_PASSIVE" value="1" />
+    <property name="target" value="1.5" />
+    <property name="env.ProgramData" value="C:\ProgramData" />
+    <property name="env.ProgramFiles(x86)" value="C:\Program Files (x86)" />
+    <property name="env.SESSIONNAME" value="Console" />
+    <property name="java.specification.vendor" value="Oracle Corporation" />
+    <property name="env.CLASSPATH" value=".;C:\Program Files\Java\jdk1.8.0_91\lib\dt.jar;C:\Program Files\Java\jdk1.8.0_91\lib\tools.jar;" />
+    <property name="env.NUMBER_OF_PROCESSORS" value="2" />
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_91\jre\bin;C:\windows\Sun\Java\bin;C:\windows\system32;C:\windows;C:/Program Files/Java/jre1.8.0_91/bin/server;C:/Program Files/Java/jre1.8.0_91/bin;C:/Program Files/Java/jre1.8.0_91/lib/amd64;%JAVA_HOME%\bin;%JAVA_HOME%\jre\bin;C:\ProgramData\Oracle\Java\javapath;D:\app\陈辉\product\11.2.0\client_1\bin;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\EmEditor;C:\Program Files\TortoiseSVN\bin;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\VSShell\Common7\IDE\;C:\Program Files (x86)\Microsoft Visual Studio 9.0\Common7\IDE\PrivateAssemblies\;C:\Program Files (x86)\Microsoft SQL Server\100\DTS\Binn\;C:\strawberry\c\bin;C:\strawberry\perl\bin;% ANDROID_SDK_HOME%\platform-tools;% ANDROID_SDK_HOME%\tools;C:\Program Files\Java\jdk1.8.0_91\bin;C:\Program Files\Java\jdk1.8.0_91\jre\bin;;C:\eclipse-jee-mars-R-win32-x86_64_base\eclipse;;." />
+    <property name="java.vendor.url" value="http://java.oracle.com/" />
+    <property name="env.LR_ROOT" value="C:\Program Files (x86)\HP\LoadRunner\" />
+    <property name="env.USERDNSDOMAIN" value="MEDICOM.NET" />
+    <property name="java.vm.vendor" value="Oracle Corporation" />
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
+    <property name="ant.version" value="Apache Ant(TM) version 1.9.4 compiled on April 29 2014" />
+    <property name="java.class.path" value="E:\workplaceNew2\SP_TEST_TOOLS\target\classes;E:\apache-maven\cangku\junit\junit\4.12\junit-4.12.jar;E:\apache-maven\cangku\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;E:\apache-maven\cangku\javax\servlet\servlet-api\2.5\servlet-api-2.5.jar;E:\apache-maven\cangku\javax\servlet\javax.servlet-api\3.1.0\javax.servlet-api-3.1.0.jar;E:\apache-maven\cangku\javax\servlet\jsp\jsp-api\2.2\jsp-api-2.2.jar;E:\apache-maven\cangku\javax\servlet\jstl\1.2\jstl-1.2.jar;E:\apache-maven\cangku\org\apache\commons\commons-lang\2.6\commons-lang-2.6.jar;E:\apache-maven\cangku\org\aspectj\aspectjrt\1.7.1\aspectjrt-1.7.1.jar;E:\apache-maven\cangku\org\aspectj\aspectjweaver\1.7.1\aspectjweaver-1.7.1.jar;E:\apache-maven\cangku\cglib\cglib\2.2\cglib-2.2.jar;E:\apache-maven\cangku\asm\asm\3.1\asm-3.1.jar;E:\apache-maven\cangku\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;E:\apache-maven\cangku\org\springframework\spring-test\4.3.7.RELEASE\spring-test-4.3.7.RELEASE.jar;E:\apache-maven\cangku\commons-logging\commons-logging\1.1.1\commons-logging-1.1.1.jar;E:\apache-maven\cangku\org\springframework\spring-core\4.3.7.RELEASE\spring-core-4.3.7.RELEASE.jar;E:\apache-maven\cangku\org\springframework\spring-aop\4.3.7.RELEASE\spring-aop-4.3.7.RELEASE.jar;E:\apache-maven\cangku\org\springframework\spring-beans\4.3.7.RELEASE\spring-beans-4.3.7.RELEASE.jar;E:\apache-maven\cangku\org\springframework\spring-context\4.3.7.RELEASE\spring-context-4.3.7.RELEASE.jar;E:\apache-maven\cangku\org\springframework\spring-context-support\4.3.7.RELEASE\spring-context-support-4.3.7.RELEASE.jar;E:\apache-maven\cangku\org\springframework\spring-expression\4.3.7.RELEASE\spring-expression-4.3.7.RELEASE.jar;E:\apache-maven\cangku\org\springframework\spring-webmvc\4.3.7.RELEASE\spring-webmvc-4.3.7.RELEASE.jar;E:\apache-maven\cangku\org\springframework\spring-web\4.3.7.RELEASE\spring-web-4.3.7.RELEASE.jar;E:\apache-maven\cangku\org\springframework\spring-jdbc\4.3.7.RELEASE\spring-jdbc-4.3.7.RELEASE.jar;E:\apache-maven\cangku\org\springframework\spring-orm\4.3.7.RELEASE\spring-orm-4.3.7.RELEASE.jar;E:\apache-maven\cangku\org\springframework\spring-tx\4.3.7.RELEASE\spring-tx-4.3.7.RELEASE.jar;E:\apache-maven\cangku\com\alibaba\druid\1.0.14\druid-1.0.14.jar;E:\apache-maven\cangku\org\slf4j\jul-to-slf4j\1.7.2\jul-to-slf4j-1.7.2.jar;E:\apache-maven\cangku\org\slf4j\slf4j-api\1.7.2\slf4j-api-1.7.2.jar;E:\apache-maven\cangku\org\slf4j\slf4j-log4j12\1.7.2\slf4j-log4j12-1.7.2.jar;E:\apache-maven\cangku\org\slf4j\jcl-over-slf4j\1.7.2\jcl-over-slf4j-1.7.2.jar;E:\apache-maven\cangku\log4j\log4j\1.2.17\log4j-1.2.17.jar;E:\apache-maven\cangku\org\lazyluke\log4jdbc-remix\0.2.7\log4jdbc-remix-0.2.7.jar;E:\apache-maven\cangku\net\sf\json-lib\json-lib\2.4\json-lib-2.4-jdk15.jar;E:\apache-maven\cangku\net\sf\ezmorph\ezmorph\1.0.6\ezmorph-1.0.6.jar;E:\apache-maven\cangku\commons-lang\commons-lang\2.6\commons-lang-2.6.jar;E:\apache-maven\cangku\com\fasterxml\jackson\core\jackson-core\2.8.8\jackson-core-2.8.8.jar;E:\apache-maven\cangku\com\fasterxml\jackson\core\jackson-databind\2.8.8\jackson-databind-2.8.8.jar;E:\apache-maven\cangku\com\fasterxml\jackson\core\jackson-annotations\2.8.8\jackson-annotations-2.8.8.jar;E:\apache-maven\cangku\commons-fileupload\commons-fileupload\1.3.1\commons-fileupload-1.3.1.jar;E:\apache-maven\cangku\commons-beanutils\commons-beanutils\1.9.2\commons-beanutils-1.9.2.jar;E:\apache-maven\cangku\commons-collections\commons-collections\3.2.1\commons-collections-3.2.1.jar;E:\apache-maven\cangku\commons-io\commons-io\2.4\commons-io-2.4.jar;E:\apache-maven\cangku\mysql\mysql-connector-java\5.1.37\mysql-connector-java-5.1.37.jar;E:\apache-maven\cangku\com\microsoft\sqlserver\sqljdbc4\4.0\sqljdbc4-4.0.jar;E:\apache-maven\cangku\com\microsoft\sqlserver\mssql-jdbc\6.3.5.jre8-preview\mssql-jdbc-6.3.5.jre8-preview.jar;E:\apache-maven\cangku\commons-codec\commons-codec\1.10\commons-codec-1.10.jar;E:\apache-maven\cangku\org\springframework\spring-websocket\4.3.7.RELEASE\spring-websocket-4.3.7.RELEASE.jar;E:\apache-maven\cangku\org\springframework\spring-messaging\4.3.7.RELEASE\spring-messaging-4.3.7.RELEASE.jar;E:\apache-maven\cangku\javax\websocket\javax.websocket-api\1.1\javax.websocket-api-1.1.jar;E:\apache-maven\cangku\org\eclipse\jetty\jetty-util\9.4.3.v20170317\jetty-util-9.4.3.v20170317.jar;E:\apache-maven\cangku\org\eclipse\jetty\jetty-websocket\8.2.0.v20160908\jetty-websocket-8.2.0.v20160908.jar;E:\apache-maven\cangku\org\eclipse\jetty\jetty-io\8.2.0.v20160908\jetty-io-8.2.0.v20160908.jar;E:\apache-maven\cangku\org\eclipse\jetty\jetty-http\8.2.0.v20160908\jetty-http-8.2.0.v20160908.jar;E:\apache-maven\cangku\org\seleniumhq\selenium\selenium-java\2.53.1\selenium-java-2.53.1.jar;E:\apache-maven\cangku\org\seleniumhq\selenium\selenium-chrome-driver\2.53.1\selenium-chrome-driver-2.53.1.jar;E:\apache-maven\cangku\org\seleniumhq\selenium\selenium-remote-driver\2.53.1\selenium-remote-driver-2.53.1.jar;E:\apache-maven\cangku\cglib\cglib-nodep\2.1_3\cglib-nodep-2.1_3.jar;E:\apache-maven\cangku\com\google\code\gson\gson\2.3.1\gson-2.3.1.jar;E:\apache-maven\cangku\org\seleniumhq\selenium\selenium-api\2.53.1\selenium-api-2.53.1.jar;E:\apache-maven\cangku\org\apache\httpcomponents\httpclient\4.5.1\httpclient-4.5.1.jar;E:\apache-maven\cangku\org\apache\httpcomponents\httpcore\4.4.3\httpcore-4.4.3.jar;E:\apache-maven\cangku\com\google\guava\guava\19.0\guava-19.0.jar;E:\apache-maven\cangku\org\seleniumhq\selenium\selenium-edge-driver\2.53.1\selenium-edge-driver-2.53.1.jar;E:\apache-maven\cangku\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;E:\apache-maven\cangku\org\seleniumhq\selenium\htmlunit-driver\2.21\htmlunit-driver-2.21.jar;E:\apache-maven\cangku\net\sourceforge\htmlunit\htmlunit\2.21\htmlunit-2.21.jar;E:\apache-maven\cangku\xalan\xalan\2.7.2\xalan-2.7.2.jar;E:\apache-maven\cangku\xalan\serializer\2.7.2\serializer-2.7.2.jar;E:\apache-maven\cangku\org\apache\commons\commons-lang3\3.4\commons-lang3-3.4.jar;E:\apache-maven\cangku\org\apache\httpcomponents\httpmime\4.5.2\httpmime-4.5.2.jar;E:\apache-maven\cangku\net\sourceforge\htmlunit\htmlunit-core-js\2.17\htmlunit-core-js-2.17.jar;E:\apache-maven\cangku\net\sourceforge\htmlunit\neko-htmlunit\2.21\neko-htmlunit-2.21.jar;E:\apache-maven\cangku\xerces\xercesImpl\2.11.0\xercesImpl-2.11.0.jar;E:\apache-maven\cangku\xml-apis\xml-apis\1.4.01\xml-apis-1.4.01.jar;E:\apache-maven\cangku\net\sourceforge\cssparser\cssparser\0.9.18\cssparser-0.9.18.jar;E:\apache-maven\cangku\org\w3c\css\sac\1.3\sac-1.3.jar;E:\apache-maven\cangku\org\eclipse\jetty\websocket\websocket-client\9.2.15.v20160210\websocket-client-9.2.15.v20160210.jar;E:\apache-maven\cangku\org\eclipse\jetty\websocket\websocket-common\9.2.15.v20160210\websocket-common-9.2.15.v20160210.jar;E:\apache-maven\cangku\org\eclipse\jetty\websocket\websocket-api\9.2.15.v20160210\websocket-api-9.2.15.v20160210.jar;E:\apache-maven\cangku\org\seleniumhq\selenium\selenium-firefox-driver\2.53.1\selenium-firefox-driver-2.53.1.jar;E:\apache-maven\cangku\org\seleniumhq\selenium\selenium-ie-driver\2.53.1\selenium-ie-driver-2.53.1.jar;E:\apache-maven\cangku\net\java\dev\jna\jna\4.1.0\jna-4.1.0.jar;E:\apache-maven\cangku\net\java\dev\jna\jna-platform\4.1.0\jna-platform-4.1.0.jar;E:\apache-maven\cangku\org\seleniumhq\selenium\selenium-safari-driver\2.53.1\selenium-safari-driver-2.53.1.jar;E:\apache-maven\cangku\io\netty\netty\3.5.7.Final\netty-3.5.7.Final.jar;E:\apache-maven\cangku\org\seleniumhq\selenium\selenium-support\2.53.1\selenium-support-2.53.1.jar;E:\apache-maven\cangku\org\seleniumhq\selenium\selenium-leg-rc\2.53.1\selenium-leg-rc-2.53.1.jar;C:\eclipse-jee-mars-R-win32-x86_64_base\eclipse\plugins\org.junit_4.12.0.v201504281640\junit.jar;C:\eclipse-jee-mars-R-win32-x86_64_base\eclipse\plugins\org.hamcrest.core_1.3.0.v201303031735.jar;E:\workplaceNew2\SP_TEST_TOOLS;C:\Program Files\Java\jdk1.8.0_91\lib\dt.jar;C:\Program Files\Java\jdk1.8.0_91\lib\tools.jar;C:\eclipse-jee-mars-R-win32-x86_64_base\eclipse\plugins\org.apache.ant_1.9.4.v201504302020\lib\ant-launcher.jar;C:\eclipse-jee-mars-R-win32-x86_64_base\eclipse\plugins\org.apache.ant_1.9.4.v201504302020\lib\ant.jar;C:\eclipse-jee-mars-R-win32-x86_64_base\eclipse\plugins\org.apache.ant_1.9.4.v201504302020\lib\ant-junit.jar;C:\eclipse-jee-mars-R-win32-x86_64_base\eclipse\plugins\org.apache.ant_1.9.4.v201504302020\lib\ant-junit4.jar" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner com.test.Junit_Learn2 skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.OutErrSummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,E:\workplaceNew2\SP_TEST_TOOLS\junit\TEST-com.test.Junit_Learn2.xml crashfile=E:\workplaceNew2\SP_TEST_TOOLS\junitvmwatcher7914987065068187717.properties propsfile=E:\workplaceNew2\SP_TEST_TOOLS\junit8795202654775865426.properties" />
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+    <property name="env.LOGONSERVER" value="\\DC03" />
+    <property name="env.windir" value="C:\windows" />
+    <property name="java.vm.specification.version" value="1.8" />
+    <property name="env.PROCESSOR_ARCHITECTURE" value="AMD64" />
+    <property name="env.LOGGER_CONFIG_PATH" value="C:\Program Files (x86)\HP\LoadRunner\dat\ltlogconf.xml" />
+    <property name="sun.cpu.endian" value="little" />
+    <property name="sun.os.patch.level" value="Service Pack 1" />
+    <property name="debuglevel" value="source,lines,vars" />
+    <property name="env.ProgramFiles" value="C:\Program Files" />
+    <property name="env.ANT_HOME" value="C:\eclipse-jee-mars-R-win32-x86_64_base\eclipse\plugins\org.apache.ant_1.9.4.v201504302020" />
+    <property name="env.PROCESSOR_REVISION" value="0603" />
+    <property name="java.io.tmpdir" value="C:\Users\陈辉\AppData\Local\Temp\" />
+    <property name="eclipse.pdebuild.home" value="/C:/eclipse-jee-mars-R-win32-x86_64_base/eclipse/plugins/org.eclipse.pde.build_3.9.100.v20150521-1524/./" />
+    <property name="env.CommonProgramFiles(x86)" value="C:\Program Files (x86)\Common Files" />
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/" />
+    <property name="env.SystemRoot" value="C:\windows" />
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment" />
+    <property name="os.arch" value="amd64" />
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_91\jre\lib\ext;C:\windows\Sun\Java\lib\ext" />
+    <property name="user.dir" value="E:\workplaceNew2\SP_TEST_TOOLS" />
+    <property name="env.LOCALAPPDATA" value="C:\Users\陈辉\AppData\Local" />
+    <property name="line.separator" value="&#xd;&#xa;" />
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM" />
+    <property name="env.PATHEXT" value=".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC" />
+    <property name="env.Path" value="C:/Program Files/Java/jre1.8.0_91/bin/server;C:/Program Files/Java/jre1.8.0_91/bin;C:/Program Files/Java/jre1.8.0_91/lib/amd64;%JAVA_HOME%\bin;%JAVA_HOME%\jre\bin;C:\ProgramData\Oracle\Java\javapath;D:\app\陈辉\product\11.2.0\client_1\bin;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\EmEditor;C:\Program Files\TortoiseSVN\bin;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\VSShell\Common7\IDE\;C:\Program Files (x86)\Microsoft Visual Studio 9.0\Common7\IDE\PrivateAssemblies\;C:\Program Files (x86)\Microsoft SQL Server\100\DTS\Binn\;C:\strawberry\c\bin;C:\strawberry\perl\bin;% ANDROID_SDK_HOME%\platform-tools;% ANDROID_SDK_HOME%\tools;C:\Program Files\Java\jdk1.8.0_91\bin;C:\Program Files\Java\jdk1.8.0_91\jre\bin;;C:\eclipse-jee-mars-R-win32-x86_64_base\eclipse;" />
+    <property name="env.ANDROID_SDK" value="C:\Program Files (x86)\Android\android-sdk" />
+    <property name="basedir" value="E:\workplaceNew2\SP_TEST_TOOLS" />
+    <property name="ant.java.version" value="1.8" />
+    <property name="ant.core.lib" value="C:\eclipse-jee-mars-R-win32-x86_64_base\eclipse\plugins\org.apache.ant_1.9.4.v201504302020\lib\ant.jar" />
+    <property name="env.USERNAME" value="陈辉" />
+    <property name="env.SystemDrive" value="C:" />
+    <property name="source" value="1.5" />
+    <property name="file.encoding" value="GBK" />
+    <property name="env.USERDOMAIN" value="MEDICOM" />
+    <property name="java.specification.version" value="1.8" />
+    <property name="ant.project.invoked-targets" value="build,Junit_Learn2,junitreport" />
+    <property name="env.ANALYSIS_PATH" value="C:\Program Files (x86)\HP\LoadRunner\" />
+    <property name="env.TARGETDIR" value="C:\Program Files (x86)\HP\LoadRunner\dat\Setup\LoadRunner\MSBuild\..\..\..\.." />
+    <property name="env.LOG_FILE" value="C:\Users\ADMINI~1\AppData\Local\Temp\ihp_custom_batches.log" />
+    <property name="env.PROCESSOR_LEVEL" value="16" />
+  </properties>
+  <testcase classname="com.test.Junit_Learn2" name="test1" time="0.006" />
+  <testcase classname="com.test.Junit_Learn2" name="test2" time="0.0" />
+  <system-out><![CDATA[11111
+aaaaa
+11111
+aaaaa
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

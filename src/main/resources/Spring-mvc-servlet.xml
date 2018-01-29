@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xmlns:mvc="http://www.springframework.org/schema/mvc"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.1.xsd
+        http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-4.1.xsd">                    
+ 
+     <!-- HTML方式读取自定义配置文件路径 -->
+    <context:property-placeholder ignore-unresolvable="true" location="classpath*:/config.properties" />
+    
+    <!-- CLASS包路径，接收拦截的所有请求 -->
+    <context:component-scan base-package="com.ch"/>
+ 
+    <!-- don't handle the static resource -->
+    <mvc:default-servlet-handler />
+ 
+    <!-- if you use annotation you must configure following setting -->
+    <mvc:annotation-driven />
+    
+    <!-- 数据源配置, 改为druid数据库连接池 -->
+	<bean id="dataSource_sqlserver" class="com.alibaba.druid.pool.DruidDataSource" init-method="init" destroy-method="close">
+		<property name="url" value="${jdbc.sqlserverurl}" />
+		<property name="username" value="${jdbc.sqlservername}" />
+		<property name="password" value="${jdbc.sqlserverpassword}" />
+		<property name="initialSize" value="1" />
+		<property name="minIdle" value="10" />
+		<property name="maxActive" value="20" />
+		<property name="maxWait" value="60000" />
+		<property name="timeBetweenEvictionRunsMillis" value="60000" />
+		<property name="minEvictableIdleTimeMillis" value="300000" />
+
+		<property name="validationQuery" value="SELECT 9527" />
+		<property name="testWhileIdle" value="true" />
+		<property name="testOnBorrow" value="false" />
+		<property name="testOnReturn" value="false" />
+
+		<property name="poolPreparedStatements" value="true" />
+		<property name="maxPoolPreparedStatementPerConnectionSize" value="20" />
+
+		<property name="removeAbandoned" value="true" />
+		<property name="removeAbandonedTimeout" value="1800" />
+		<property name="logAbandoned" value="true" />
+
+		<property name="filters" value="stat" />
+	</bean>
+	<!-- jdbc template -->
+	<bean id="jdbcTemplate_sqlserver" class="org.springframework.jdbc.core.JdbcTemplate">
+		<property name="dataSource" ref="dataSource_sqlserver" />
+	</bean>
+    <!-- 数据源配置, 结束-->
+    
+    <!-- 数据源配置, 改为druid数据库连接池 -->
+	<bean id="dataSource_mysql" class="com.alibaba.druid.pool.DruidDataSource" init-method="init" destroy-method="close">
+		<property name="url" value="${jdbc.passmysqlurl}" />
+		<property name="username" value="${jdbc.passmysqlname}" />
+		<property name="password" value="${jdbc.passmysqlpassword}" />
+		<property name="initialSize" value="1" />
+		<property name="minIdle" value="10" />
+		<property name="maxActive" value="20" />
+		<property name="maxWait" value="60000" />
+		<property name="timeBetweenEvictionRunsMillis" value="60000" />
+		<property name="minEvictableIdleTimeMillis" value="300000" />
+
+		<property name="validationQuery" value="SELECT 9527" />
+		<property name="testWhileIdle" value="true" />
+		<property name="testOnBorrow" value="false" />
+		<property name="testOnReturn" value="false" />
+
+		<property name="poolPreparedStatements" value="true" />
+		<property name="maxPoolPreparedStatementPerConnectionSize" value="20" />
+
+		<property name="removeAbandoned" value="true" />
+		<property name="removeAbandonedTimeout" value="1800" />
+		<property name="logAbandoned" value="true" />
+
+		<property name="filters" value="stat" />
+	</bean>
+	<!-- jdbc template -->
+	<bean id="jdbcTemplate_mysql" class="org.springframework.jdbc.core.JdbcTemplate">
+		<property name="dataSource" ref="dataSource_mysql" />
+	</bean>
+    <!-- 数据源配置, 结束-->
+    
+    <!-- 数据源配置, 改为druid数据库连接池 -->
+	<bean id="dataSource_anli" class="com.alibaba.druid.pool.DruidDataSource" init-method="init" destroy-method="close">
+		<property name="url" value="${jdbc.anlimysqlurl}" />
+		<property name="username" value="${jdbc.anlimysqlname}" />
+		<property name="password" value="${jdbc.anlimysqlpassword}" />
+		<property name="initialSize" value="1" />
+		<property name="minIdle" value="10" />
+		<property name="maxActive" value="20" />
+		<property name="maxWait" value="60000" />
+		<property name="timeBetweenEvictionRunsMillis" value="60000" />
+		<property name="minEvictableIdleTimeMillis" value="300000" />
+
+		<property name="validationQuery" value="SELECT 9527" />
+		<property name="testWhileIdle" value="true" />
+		<property name="testOnBorrow" value="false" />
+		<property name="testOnReturn" value="false" />
+
+		<property name="poolPreparedStatements" value="true" />
+		<property name="maxPoolPreparedStatementPerConnectionSize" value="20" />
+
+		<property name="removeAbandoned" value="true" />
+		<property name="removeAbandonedTimeout" value="1800" />
+		<property name="logAbandoned" value="true" />
+
+		<property name="filters" value="stat" />
+	</bean>
+	<!-- jdbc template -->
+	<bean id="jdbcTemplate_anli" class="org.springframework.jdbc.core.JdbcTemplate">
+		<property name="dataSource" ref="dataSource_anli" />
+	</bean>
+    <!-- 数据源配置, 结束-->
+    
+     <!-- configure the InternalResourceViewResolver -->
+    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver"
+            id="internalResourceViewResolver">
+        <!-- 前缀 -->
+        <property name="prefix" value="/WEB-INF/view/" />
+        <!-- 后缀 -->
+        <property name="suffix" value=".jsp" />
+    </bean>
+</beans>

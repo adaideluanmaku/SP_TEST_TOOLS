@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- WARNING: Eclipse auto-generated file.
+              Any modifications will be overwritten.
+              To include a user specific buildfile here, simply create one in the same
+              directory with the processing instruction <?eclipse.ant.import?>
+              as the first entry and export the buildfile again. --><project basedir="." default="build" name="SP_TEST_TOOLS">
+    <property environment="env"/>
+    <property name="ECLIPSE_HOME" value="C:/eclipse-jee-mars-R-win32-x86_64_base/eclipse/"/>
+    <property name="junit.output.dir" value="junit"/>
+    <property name="debuglevel" value="source,lines,vars"/>
+    <property name="target" value="1.5"/>
+    <property name="source" value="1.5"/>
+    <path id="Maven Dependencies.libraryclasspath">
+        <pathelement location="../../apache-maven/cangku/junit/junit/4.12/junit-4.12.jar"/>
+        <pathelement location="../../apache-maven/cangku/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar"/>
+        <pathelement location="../../apache-maven/cangku/javax/servlet/servlet-api/2.5/servlet-api-2.5.jar"/>
+        <pathelement location="../../apache-maven/cangku/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar"/>
+        <pathelement location="../../apache-maven/cangku/javax/servlet/jsp/jsp-api/2.2/jsp-api-2.2.jar"/>
+        <pathelement location="../../apache-maven/cangku/javax/servlet/jstl/1.2/jstl-1.2.jar"/>
+        <pathelement location="../../apache-maven/cangku/org/apache/commons/commons-lang/2.6/commons-lang-2.6.jar"/>
+        <pathelement location="../../apache-maven/cangku/org/aspectj/aspectjrt/1.7.1/aspectjrt-1.7.1.jar"/>
+        <pathelement location="../../apache-maven/cangku/org/aspectj/aspectjweaver/1.7.1/aspectjweaver-1.7.1.jar"/>
+        <pathelement location="../../apache-maven/cangku/cglib/cglib/2.2/cglib-2.2.jar"/>
+        <pathelement location="../../apache-maven/cangku/asm/asm/3.1/asm-3.1.jar"/>
+        <pathelement location="../../apache-maven/cangku/aopalliance/aopalliance/1.0/aopalliance-1.0.jar"/>
+        <pathelement location="../../apache-maven/cangku/org/springframework/spring-test/4.3.7.RELEASE/spring-test-4.3.7.RELEASE.jar"/>
+        <pathelement location="../../apache-maven/cangku/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar"/>
+        <pathelement location="../../apache-maven/cangku/org/springframework/spring-core/4.3.7.RELEASE/spring-core-4.3.7.RELEASE.jar"/>
+        <pathelement location="../../apache-maven/cangku/org/springframework/spring-aop/4.3.7.RELEASE/spring-aop-4.3.7.RELEASE.jar"/>
+        <pathelement location="../../apache-maven/cangku/org/springframework/spring-beans/4.3.7.RELEASE/spring-beans-4.3.7.RELEASE.jar"/>
+        <pathelement location="../../apache-maven/cangku/org/springframework/spring-context/4.3.7.RELEASE/spring-context-4.3.7.RELEASE.jar"/>
+        <pathelement location="../../apache-maven/cangku/org/springframework/spring-context-support/4.3.7.RELEASE/spring-context-support-4.3.7.RELEASE.jar"/>
+        <pathelement location="../../apache-maven/cangku/org/springframework/spring-expression/4.3.7.RELEASE/spring-expression-4.3.7.RELEASE.jar"/>
+        <pathelement location="../../apache-maven/cangku/org/springframework/spring-webmvc/4.3.7.RELEASE/spring-webmvc-4.3.7.RELEASE.jar"/>
+        <pathelement location="../../apache-maven/cangku/org/springframework/spring-web/4.3.7.RELEASE/spring-web-4.3.7.RELEASE.jar"/>
+        <pathelement location="../../apache-maven/cangku/org/springframework/spring-jdbc/4.3.7.RELEASE/spring-jdbc-4.3.7.RELEASE.jar"/>
+        <pathelement location="../../apache-maven/cangku/org/springframework/spring-orm/4.3.7.RELEASE/spring-orm-4.3.7.RELEASE.jar"/>
+        <pathelement location="../../apache-maven/cangku/org/springframework/spring-tx/4.3.7.RELEASE/spring-tx-4.3.7.RELEASE.jar"/>
+        <pathelement location="../../apache-maven/cangku/com/alibaba/druid/1.0.14/druid-1.0.14.jar"/>
+        <pathelement location="../../apache-maven/cangku/org/slf4j/jul-to-slf4j/1.7.2/jul-to-slf4j-1.7.2.jar"/>
+        <pathelement location="../../apache-maven/cangku/org/slf4j/slf4j-api/1.7.2/slf4j-api-1.7.2.jar"/>
+        <pathelement location="../../apache-maven/cangku/org/slf4j/slf4j-log4j12/1.7.2/slf4j-log4j12-1.7.2.jar"/>
+        <pathelement location="../../apache-maven/cangku/org/slf4j/jcl-over-slf4j/1.7.2/jcl-over-slf4j-1.7.2.jar"/>
+        <pathelement location="../../apache-maven/cangku/log4j/log4j/1.2.17/log4j-1.2.17.jar"/>
+        <pathelement location="../../apache-maven/cangku/org/lazyluke/log4jdbc-remix/0.2.7/log4jdbc-remix-0.2.7.jar"/>
+        <pathelement location="../../apache-maven/cangku/net/sf/json-lib/json-lib/2.4/json-lib-2.4-jdk15.jar"/>
+        <pathelement location="../../apache-maven/cangku/net/sf/ezmorph/ezmorph/1.0.6/ezmorph-1.0.6.jar"/>
+        <pathelement location="../../apache-maven/cangku/commons-lang/commons-lang/2.6/commons-lang-2.6.jar"/>
+        <pathelement location="../../apache-maven/cangku/com/fasterxml/jackson/core/jackson-core/2.8.8/jackson-core-2.8.8.jar"/>
+        <pathelement location="../../apache-maven/cangku/com/fasterxml/jackson/core/jackson-databind/2.8.8/jackson-databind-2.8.8.jar"/>
+        <pathelement location="../../apache-maven/cangku/com/fasterxml/jackson/core/jackson-annotations/2.8.8/jackson-annotations-2.8.8.jar"/>
+        <pathelement location="../../apache-maven/cangku/commons-fileupload/commons-fileupload/1.3.1/commons-fileupload-1.3.1.jar"/>
+        <pathelement location="../../apache-maven/cangku/commons-beanutils/commons-beanutils/1.9.2/commons-beanutils-1.9.2.jar"/>
+        <pathelement location="../../apache-maven/cangku/commons-collections/commons-collections/3.2.1/commons-collections-3.2.1.jar"/>
+        <pathelement location="../../apache-maven/cangku/commons-io/commons-io/2.4/commons-io-2.4.jar"/>
+        <pathelement location="../../apache-maven/cangku/mysql/mysql-connector-java/5.1.37/mysql-connector-java-5.1.37.jar"/>
+        <pathelement location="../../apache-maven/cangku/com/microsoft/sqlserver/sqljdbc4/4.0/sqljdbc4-4.0.jar"/>
+        <pathelement location="../../apache-maven/cangku/com/microsoft/sqlserver/mssql-jdbc/6.3.5.jre8-preview/mssql-jdbc-6.3.5.jre8-preview.jar"/>
+        <pathelement location="../../apache-maven/cangku/commons-codec/commons-codec/1.10/commons-codec-1.10.jar"/>
+        <pathelement location="../../apache-maven/cangku/org/springframework/spring-websocket/4.3.7.RELEASE/spring-websocket-4.3.7.RELEASE.jar"/>
+        <pathelement location="../../apache-maven/cangku/org/springframework/spring-messaging/4.3.7.RELEASE/spring-messaging-4.3.7.RELEASE.jar"/>
+        <pathelement location="../../apache-maven/cangku/javax/websocket/javax.websocket-api/1.1/javax.websocket-api-1.1.jar"/>
+        <pathelement location="../../apache-maven/cangku/org/eclipse/jetty/jetty-util/9.4.3.v20170317/jetty-util-9.4.3.v20170317.jar"/>
+        <pathelement location="../../apache-maven/cangku/org/eclipse/jetty/jetty-websocket/8.2.0.v20160908/jetty-websocket-8.2.0.v20160908.jar"/>
+        <pathelement location="../../apache-maven/cangku/org/eclipse/jetty/jetty-io/8.2.0.v20160908/jetty-io-8.2.0.v20160908.jar"/>
+        <pathelement location="../../apache-maven/cangku/org/eclipse/jetty/jetty-http/8.2.0.v20160908/jetty-http-8.2.0.v20160908.jar"/>
+        <pathelement location="../../apache-maven/cangku/org/seleniumhq/selenium/selenium-java/2.53.1/selenium-java-2.53.1.jar"/>
+        <pathelement location="../../apache-maven/cangku/org/seleniumhq/selenium/selenium-chrome-driver/2.53.1/selenium-chrome-driver-2.53.1.jar"/>
+        <pathelement location="../../apache-maven/cangku/org/seleniumhq/selenium/selenium-remote-driver/2.53.1/selenium-remote-driver-2.53.1.jar"/>
+        <pathelement location="../../apache-maven/cangku/cglib/cglib-nodep/2.1_3/cglib-nodep-2.1_3.jar"/>
+        <pathelement location="../../apache-maven/cangku/com/google/code/gson/gson/2.3.1/gson-2.3.1.jar"/>
+        <pathelement location="../../apache-maven/cangku/org/seleniumhq/selenium/selenium-api/2.53.1/selenium-api-2.53.1.jar"/>
+        <pathelement location="../../apache-maven/cangku/org/apache/httpcomponents/httpclient/4.5.1/httpclient-4.5.1.jar"/>
+        <pathelement location="../../apache-maven/cangku/org/apache/httpcomponents/httpcore/4.4.3/httpcore-4.4.3.jar"/>
+        <pathelement location="../../apache-maven/cangku/com/google/guava/guava/19.0/guava-19.0.jar"/>
+        <pathelement location="../../apache-maven/cangku/org/seleniumhq/selenium/selenium-edge-driver/2.53.1/selenium-edge-driver-2.53.1.jar"/>
+        <pathelement location="../../apache-maven/cangku/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar"/>
+        <pathelement location="../../apache-maven/cangku/org/seleniumhq/selenium/htmlunit-driver/2.21/htmlunit-driver-2.21.jar"/>
+        <pathelement location="../../apache-maven/cangku/net/sourceforge/htmlunit/htmlunit/2.21/htmlunit-2.21.jar"/>
+        <pathelement location="../../apache-maven/cangku/xalan/xalan/2.7.2/xalan-2.7.2.jar"/>
+        <pathelement location="../../apache-maven/cangku/xalan/serializer/2.7.2/serializer-2.7.2.jar"/>
+        <pathelement location="../../apache-maven/cangku/org/apache/commons/commons-lang3/3.4/commons-lang3-3.4.jar"/>
+        <pathelement location="../../apache-maven/cangku/org/apache/httpcomponents/httpmime/4.5.2/httpmime-4.5.2.jar"/>
+        <pathelement location="../../apache-maven/cangku/net/sourceforge/htmlunit/htmlunit-core-js/2.17/htmlunit-core-js-2.17.jar"/>
+        <pathelement location="../../apache-maven/cangku/net/sourceforge/htmlunit/neko-htmlunit/2.21/neko-htmlunit-2.21.jar"/>
+        <pathelement location="../../apache-maven/cangku/xerces/xercesImpl/2.11.0/xercesImpl-2.11.0.jar"/>
+        <pathelement location="../../apache-maven/cangku/xml-apis/xml-apis/1.4.01/xml-apis-1.4.01.jar"/>
+        <pathelement location="../../apache-maven/cangku/net/sourceforge/cssparser/cssparser/0.9.18/cssparser-0.9.18.jar"/>
+        <pathelement location="../../apache-maven/cangku/org/w3c/css/sac/1.3/sac-1.3.jar"/>
+        <pathelement location="../../apache-maven/cangku/org/eclipse/jetty/websocket/websocket-client/9.2.15.v20160210/websocket-client-9.2.15.v20160210.jar"/>
+        <pathelement location="../../apache-maven/cangku/org/eclipse/jetty/websocket/websocket-common/9.2.15.v20160210/websocket-common-9.2.15.v20160210.jar"/>
+        <pathelement location="../../apache-maven/cangku/org/eclipse/jetty/websocket/websocket-api/9.2.15.v20160210/websocket-api-9.2.15.v20160210.jar"/>
+        <pathelement location="../../apache-maven/cangku/org/seleniumhq/selenium/selenium-firefox-driver/2.53.1/selenium-firefox-driver-2.53.1.jar"/>
+        <pathelement location="../../apache-maven/cangku/org/seleniumhq/selenium/selenium-ie-driver/2.53.1/selenium-ie-driver-2.53.1.jar"/>
+        <pathelement location="../../apache-maven/cangku/net/java/dev/jna/jna/4.1.0/jna-4.1.0.jar"/>
+        <pathelement location="../../apache-maven/cangku/net/java/dev/jna/jna-platform/4.1.0/jna-platform-4.1.0.jar"/>
+        <pathelement location="../../apache-maven/cangku/org/seleniumhq/selenium/selenium-safari-driver/2.53.1/selenium-safari-driver-2.53.1.jar"/>
+        <pathelement location="../../apache-maven/cangku/io/netty/netty/3.5.7.Final/netty-3.5.7.Final.jar"/>
+        <pathelement location="../../apache-maven/cangku/org/seleniumhq/selenium/selenium-support/2.53.1/selenium-support-2.53.1.jar"/>
+        <pathelement location="../../apache-maven/cangku/org/seleniumhq/selenium/selenium-leg-rc/2.53.1/selenium-leg-rc-2.53.1.jar"/>
+    </path>
+    <path id="JUnit 4.libraryclasspath">
+        <pathelement location="${ECLIPSE_HOME}plugins/org.junit_4.12.0.v201504281640/junit.jar"/>
+        <pathelement location="${ECLIPSE_HOME}plugins/org.hamcrest.core_1.3.0.v201303031735.jar"/>
+    </path>
+    <path id="SP_TEST_TOOLS.classpath">
+        <pathelement location="target/classes"/>
+        <path refid="Maven Dependencies.libraryclasspath"/>
+        <path refid="JUnit 4.libraryclasspath"/>
+    </path>
+    <path id="run.Review_test (1).classpath">
+        <path refid="SP_TEST_TOOLS.classpath"/>
+        <path refid="Maven Dependencies.libraryclasspath"/>
+    </path>
+    <path id="run.Review_test.outfile.classpath">
+        <path refid="SP_TEST_TOOLS.classpath"/>
+        <path refid="Maven Dependencies.libraryclasspath"/>
+    </path>
+    <path id="run.Review_test.review.classpath">
+        <path refid="SP_TEST_TOOLS.classpath"/>
+        <path refid="Maven Dependencies.libraryclasspath"/>
+    </path>
+    <path id="run.SP_TEST_TOOLS (1).classpath">
+        <path refid="SP_TEST_TOOLS.classpath"/>
+        <path refid="Maven Dependencies.libraryclasspath"/>
+    </path>
+    <path id="run.Test11 (1).classpath">
+        <path refid="SP_TEST_TOOLS.classpath"/>
+        <path refid="Maven Dependencies.libraryclasspath"/>
+    </path>
+    <path id="run.Test12.classpath">
+        <path refid="SP_TEST_TOOLS.classpath"/>
+        <path refid="Maven Dependencies.libraryclasspath"/>
+    </path>
+    <path id="run.Test12.test4.classpath">
+        <path refid="SP_TEST_TOOLS.classpath"/>
+        <path refid="Maven Dependencies.libraryclasspath"/>
+    </path>
+    <path id="run.Review_test (2).classpath">
+        <path refid="SP_TEST_TOOLS.classpath"/>
+        <path refid="Maven Dependencies.libraryclasspath"/>
+    </path>
+    <path id="run.Junit_Learn2.classpath">
+        <path refid="SP_TEST_TOOLS.classpath"/>
+        <path refid="Maven Dependencies.libraryclasspath"/>
+    </path>
+    <path id="run.Junit_Learn (1).classpath">
+        <path refid="SP_TEST_TOOLS.classpath"/>
+        <path refid="Maven Dependencies.libraryclasspath"/>
+    </path>
+    <target name="init">
+        <mkdir dir="target/classes"/>
+        <copy includeemptydirs="false" todir="target/classes">
+            <fileset dir="src/main/java">
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="target/classes">
+            <fileset dir="src/main/resources">
+                <exclude name="**/*.java"/>
+                <exclude name="**"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="target/classes">
+            <fileset dir="src/test/java">
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="target/classes">
+            <fileset dir="src/test/resources">
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="clean">
+        <delete dir="target/classes"/>
+    </target>
+    <target depends="clean" name="cleanall"/>
+    <target depends="build-subprojects,build-project" name="build"/>
+    <target name="build-subprojects"/>
+    <target depends="init" name="build-project">
+        <echo message="${ant.project.name}: ${ant.file}"/>
+        <javac debug="true" debuglevel="${debuglevel}" destdir="target/classes" includeantruntime="false" source="${source}" target="${target}">
+            <src path="src/main/java"/>
+            <src path="src/main/resources"/>
+            <src path="src/test/java"/>
+            <src path="src/test/resources"/>
+            <exclude name="**"/>
+            <classpath refid="SP_TEST_TOOLS.classpath"/>
+        </javac>
+    </target>
+    <target description="Build all projects which reference this project. Useful to propagate changes." name="build-refprojects"/>
+    <target description="copy Eclipse compiler jars to ant lib directory" name="init-eclipse-compiler">
+        <copy todir="${ant.library.dir}">
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </copy>
+        <unzip dest="${ant.library.dir}">
+            <patternset includes="jdtCompilerAdapter.jar"/>
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </unzip>
+    </target>
+    <target description="compile project with Eclipse compiler" name="build-eclipse-compiler">
+        <property name="build.compiler" value="org.eclipse.jdt.core.JDTCompilerAdapter"/>
+        <antcall target="build"/>
+    </target>
+    <target name="Review_test (1)">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="com.ch.PAtest.Review_test" todir="${junit.output.dir}"/>
+            <classpath refid="run.Review_test (1).classpath"/>
+        </junit>
+    </target>
+    <target name="Review_test.outfile">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="com.ch.PAtest.Review_test" todir="${junit.output.dir}"/>
+            <classpath refid="run.Review_test.outfile.classpath"/>
+        </junit>
+    </target>
+    <target name="Review_test.review">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="com.ch.PAtest.Review_test" todir="${junit.output.dir}"/>
+            <classpath refid="run.Review_test.review.classpath"/>
+        </junit>
+    </target>
+    <target name="SP_TEST_TOOLS (1)">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="com.ch.PAtest.Review_test" todir="${junit.output.dir}"/>
+            <test name="com.test.Junit_Learn" todir="${junit.output.dir}"/>
+            <test name="com.test.Junit_Learn2" todir="${junit.output.dir}"/>
+            <test name="com.test.Spring_test" todir="${junit.output.dir}"/>
+            <classpath refid="run.SP_TEST_TOOLS (1).classpath"/>
+        </junit>
+    </target>
+    <target name="Test11 (1)">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="com.test.Test11" todir="${junit.output.dir}"/>
+            <classpath refid="run.Test11 (1).classpath"/>
+        </junit>
+    </target>
+    <target name="Test12">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="com.test.Test12" todir="${junit.output.dir}"/>
+            <classpath refid="run.Test12.classpath"/>
+        </junit>
+    </target>
+    <target name="Test12.test4">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="com.test.Test12" todir="${junit.output.dir}"/>
+            <classpath refid="run.Test12.test4.classpath"/>
+        </junit>
+    </target>
+    <target name="Review_test (2)">
+        <java classname="com.ch.PAtest.Review_test" failonerror="true" fork="yes">
+            <classpath refid="run.Review_test (2).classpath"/>
+        </java>
+    </target>
+    <target name="Junit_Learn2">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="com.test.Junit_Learn2" todir="${junit.output.dir}"/>
+            <classpath refid="run.Junit_Learn2.classpath"/>
+        </junit>
+    </target>
+    <target name="Junit_Learn (1)">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="com.test.Junit_Learn" todir="${junit.output.dir}"/>
+            <classpath refid="run.Junit_Learn (1).classpath"/>
+        </junit>
+    </target>
+    <target name="junitreport">
+        <junitreport todir="${junit.output.dir}">
+            <fileset dir="${junit.output.dir}">
+                <include name="TEST-*.xml"/>
+            </fileset>
+            <report format="frames" todir="${junit.output.dir}"/>
+        </junitreport>
+    </target>
+</project>
