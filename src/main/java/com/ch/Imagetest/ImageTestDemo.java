@@ -34,7 +34,7 @@ public class ImageTestDemo {
 	   }
 
 	/*
-	 * 字符串对比
+	 * 汉明距离字符串对比
 	 */
 	public int distance(String s1, String s2) {
 		int counter = 0;
@@ -48,6 +48,7 @@ public class ImageTestDemo {
 
 	// Returns a 'binary string' (like. 001010111011100010) which is easy to do
 	// a hamming distance on.
+	// 将图片转换成汉明距离字符串
 	public String getHash(InputStream is) throws Exception {
 		BufferedImage img = ImageIO.read(is);
 
