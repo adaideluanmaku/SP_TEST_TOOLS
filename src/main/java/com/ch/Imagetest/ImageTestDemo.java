@@ -206,7 +206,7 @@ public class ImageTestDemo {
 		try {
 			image1 = p.getHash(new FileInputStream(new File("E:/ch.jpg")));
 			image2 = p.getHash(new FileInputStream(new File("E:/test.jpg")));
-			System.out.println("1:1 Score is " + p.distance(image1, image2)+" 。汉明距离越大表明图片差异越大，0<x<5不同但相似，>5明显不同");
+			System.out.println("1:1 Score is " + p.distance(image1, image2)+" 。说明：汉明距离越大表明图片差异越大，0<x<5不同但相似，>5明显不同");
 
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
