@@ -45,7 +45,7 @@
 	
 	
 	<!-- 配置私服开始 -->
-	<repositories>
+	<!-- <repositories>
 		<repository>
 			<id>nexus</id>
 			<name>Team Nexus Repository</name>
@@ -61,7 +61,31 @@
 				<enabled>false</enabled>
 			</snapshots>
 		</pluginRepository>
-	</pluginRepositories>
+	</pluginRepositories> -->
+	
+	<!-- 远程仓库 -->
+	<repositories>
+		<!-- 设定依赖Nexus私服仓库 -->
+		<repository>
+			<id>myboss</id>
+			<name>JBoss Repository</name>
+			<!-- 中央仓库 -->
+			<url>http://repo.maven.apache.org/maven2</url>
+			<!-- 阿里云仓库 -->
+			<!-- <url>http://maven.aliyun.com/nexus/content/groups/public/</url> -->
+			<releases>
+				<enabled>true</enabled>
+				<updatePolicy>never</updatePolicy>
+			</releases>
+			<snapshots>
+				<enabled>false</enabled>
+				<checksumPolicy>warn</checksumPolicy>
+			</snapshots>
+			<layout>default</layout>
+		</repository>
+		
+	</repositories>
+	
 
 	<dependencies>
 		<dependency>
