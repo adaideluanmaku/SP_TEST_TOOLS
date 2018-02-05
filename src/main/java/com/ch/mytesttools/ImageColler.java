@@ -1,5 +1,6 @@
-package com.ch.Imagetest;
+package com.ch.mytesttools;
 
+import java.awt.Color;
 import java.awt.Graphics2D;
 import java.awt.Image;
 import java.awt.Rectangle;
@@ -22,29 +23,37 @@ import javax.imageio.stream.ImageInputStream;
 import com.sun.image.codec.jpeg.JPEGCodec;
 import com.sun.image.codec.jpeg.JPEGImageEncoder;
 
-public class Test {
+public class ImageColler {
 	static int size=32;
 //	static float height =32;
 //	static float width =32;
 	public static void main(String args[]) throws FileNotFoundException, IOException{
+		ImageColler test = new ImageColler();
+		
 //		changeImge(new File("E:/ch.jpg"));
 //		changeImge(new File("E:/test.jpg"));
 		
-//		cutImage("E:/1ch.jpg",1030,151);
-//		cutImage("E:/1test.jpg",1030,151);
+		test.alterImageRGB(new File("E:/1ch.jpg"));
+		test.alterImageRGB(new File("E:/1test.jpg"));
+		
+//		cutImage("E:/1ch.jpg",5,5);
+//		cutImage("E:/1test.jpg",5,5);
+		
+		
 		
 		BufferedImage image = ImageIO.read(new FileInputStream(new File("E:/1ch.jpg")));
 		BufferedImage image1 = ImageIO.read(new FileInputStream(new File("E:/1test.jpg")));
 //		float size =image.getHeight()*image.getWidth();
 //		float size1 =image1.getHeight()*image1.getWidth();
 		
-		Test test = new Test();
 //		if(size<=size1){
-//			System.out.println(test.operationRGB(image));
+//			System.out.println(test.operationRGB(image1));
 //			System.out.println(test.operationRGB(image,image1));
 //		}
 		
 
+//		image = test.grayscale(image);
+//		image1 = test.grayscale(image1);
 		System.out.println(test.operationRGB1(image));
 		System.out.println(test.operationRGB1(image1));
 	}
@@ -57,20 +66,19 @@ public class Test {
 		
 //		image = grayscale(image);
 
-//		IOimagetolocal(image);
-		
 		String img = "";
 		float rgbsum=0;
 		int statussum = 0;
 	    for (int i = 0; i < width; i++) {
 	    	for (int j = 0; j < height; j++) {
-//	    		if((image.getRGB(i, j)  & 0xff)<255){
-//	    			statussum++;
-//	    			rgbsum+=(image.getRGB(i, j)  & 0xff);
-//	    		}
+	    		if((image.getRGB(i, j)  & 0xff)<160){
+	    			statussum++;
+	    			rgbsum+=(image.getRGB(i, j)  & 0xff);
+//	    			System.out.println(image.getRGB(i, j)  & 0xff);
+	    		}
 			    
-	    		statussum++;
-    			rgbsum+=(image.getRGB(i, j)  & 0xff);
+//	    		statussum++;
+//    			rgbsum+=(image.getRGB(i, j)  & 0xff);
     			
 //			    System.out.println(image.getRGB(i, j)  & 0xff);
 			}
@@ -81,7 +89,10 @@ public class Test {
 	    
 //	    System.out.println(rgbsum);
 	    
-	    return avg;
+	    System.out.println(image.getRGB(0, 1)  & 0xff);
+//	    System.out.println(image.getRGB(7, 11)  & 0xff);
+	    
+	    return statussum;
 	}
 	
 	//
@@ -103,23 +114,24 @@ public class Test {
 			}
 		}
 		
+		System.out.println(imagefirstRGB);
+		
 		String img = "";
 		float rgbsum=0;
 		int status = 0;
-	    for (int i = 0; i < width; i++) {
-	    	for (int j = 0; j < height; j++) {
-//			    rgbsum+=(image.getRGB(i, j)  & 0xff);
-			    if(status==0){
-	    			if(imagefirstRGB == (image.getRGB(i, j)  & 0xff)){
-		    			rgbsum+=(image.getRGB(i, j)  & 0xff);
-		    			status=1;
-		    		}
-	    		}
-	    		if(status==1){
-	    			rgbsum+=(image.getRGB(i, j)  & 0xff);
-	    		}
-			}
-	    }
+//	    for (int i = 0; i < width; i++) {
+//	    	for (int j = 0; j < height; j++) {
+//			    if(status==0){
+//	    			if(imagefirstRGB == (image.getRGB(i, j)  & 0xff)){
+//		    			rgbsum+=(image.getRGB(i, j)  & 0xff);
+//		    			status=1;
+//		    		}
+//	    		}
+//	    		if(status==1){
+//	    			rgbsum+=(image.getRGB(i, j)  & 0xff);
+//	    		}
+//			}
+//	    }
 	    
 //	    float avg = rgbsum/(height*width);
 //	    System.out.println(rgbsum);
@@ -188,12 +200,6 @@ public class Test {
 		return img;
 	}
 	
-	//输出图片到本地
-	public void IOimagetolocal(BufferedImage img) throws IOException{
-		BufferedImage bi = new BufferedImage(img.getWidth(), img.getHeight(), BufferedImage.TYPE_INT_ARGB);
-		ImageIO.write(bi, "JPEG", new File("E:/sss.jpg"));
-	}
-	
 	/** 
      * * 转换图片 * * 
      */  
@@ -209,7 +215,7 @@ public class Test {
             JPEGImageEncoder encoder = JPEGCodec.createJPEGEncoder(fos);  
             encoder.encode(bufferedImage);  
             fos.close();  
-             System.out.println("转换成功...");  
+            System.out.println("转换成功...");  
         } catch (IOException e) {  
             e.printStackTrace();  
             throw new IllegalStateException("图片转换出错！", e);  
@@ -241,4 +247,26 @@ public class Test {
             System.out.println("图片裁剪出现异常:"+e);
         }  
     }  
+    
+    public void alterImageRGB(File img) throws IOException{
+    	BufferedImage image = ImageIO.read(new FileInputStream(img));
+    	
+    	int width=image.getWidth();
+    	int height=image.getHeight();
+    	
+    	for (int i = 0; i < width; i++) {
+	    	for (int j = 0; j < height; j++) {
+	    		image.setRGB(i, j, 255);
+//	    		if((image.getRGB(i, j)  & 0xff)!=0){
+//	    			image.setRGB(i, j, 0);
+//	    		}
+			}
+	    }
+    	
+		 FileOutputStream fos = new FileOutputStream("E:/"+img.getName());  
+	     JPEGImageEncoder encoder = JPEGCodec.createJPEGEncoder(fos);  
+	     encoder.encode(image);  
+	     fos.close();  
+	     System.out.println("转换成功...");  
+    }
 }
