@@ -23,6 +23,7 @@ import javax.imageio.stream.ImageInputStream;
 import com.sun.image.codec.jpeg.JPEGCodec;
 import com.sun.image.codec.jpeg.JPEGImageEncoder;
 
+//图片处理工厂
 public class ImageColler {
 	static int size=32;
 //	static float height =32;
@@ -248,6 +249,7 @@ public class ImageColler {
         }  
     }  
     
+    //图片变色处理
     public void alterImageRGB(File img) throws IOException{
     	BufferedImage image = ImageIO.read(new FileInputStream(img));
     	
